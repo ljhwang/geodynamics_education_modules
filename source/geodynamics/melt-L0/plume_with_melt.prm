@@ -2,7 +2,7 @@ set Dimension                              = 2
 set Start time                             = 0
 set End time                               = 5e6
 set CFL number                             = 1
-set Use years instead of seconds           = true
+set Use years in output instead of seconds = true
 set Output directory                       = plume-with-melt
 set Adiabatic surface temperature          = 1623
 set Use operator splitting                 = true
@@ -43,10 +43,10 @@ end
 
 subsection Mesh refinement
   set Initial adaptive refinement        = 1
-  set Initial global refinement          = 4
+  set Initial global refinement          = 2
   set Refinement fraction                = 0.70
   set Coarsening fraction                = 0.1
-  set Minimum refinement level           = 4
+  set Minimum refinement level           = 2
   set Strategy                           = composition threshold
 
   subsection Composition threshold
