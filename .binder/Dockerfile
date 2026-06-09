@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
     
-RUN pip install numpy pandas matplotlib scipy meshio tables;
+RUN pip install pyvista numpy pandas matplotlib scipy meshio tables;
     
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
