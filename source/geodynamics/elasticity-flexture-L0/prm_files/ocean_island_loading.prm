@@ -3,12 +3,11 @@
 # Global parameters
 set Dimension                              = 2
 set Start time                             = 0
-set End time                               = 200000
+set End time                               = 100000
 set Use years in output instead of seconds = true
-set Resume computation                     = false
 set CFL number                             = 0.001
-set Maximum time step                      = 5e3
-set Output directory                       = postglacial-rebound
+set Maximum time step                      = 3e3
+set Output directory                       = ocean-island-loading
 set Pressure normalization                 = no
 
 subsection Geometry model
@@ -17,14 +16,14 @@ subsection Geometry model
   subsection Box
     set X repetitions = 2
     set Y repetitions = 1
-    set X extent      = 6000000
+    set X extent      = 800000
     set Y extent      = 400000
   end
 end
 
 subsection Mesh refinement
   set Initial adaptive refinement        = 1
-  set Initial global refinement          = 3
+  set Initial global refinement          = 2
   set Time steps between mesh refinement = 0
   set Strategy                           = minimum refinement function
 
@@ -55,7 +54,7 @@ subsection Mesh deformation
   set Mesh deformation boundary indicators        = top: free surface
   set Additional tangential mesh velocity boundary indicators = left, right
   subsection Free surface
-    set Surface velocity projection = vertical
+    set Surface velocity projection = normal
     set Free surface stabilization theta = 0.75
   end
 end
@@ -68,8 +67,9 @@ subsection Boundary traction model
   set Prescribed traction boundary indicators = top:function
   subsection Function
     set Variable names      = x,y,t
-    set Function constants  = d=3000,l=1e6,rho=1000,g=10, x0=3e6
-    set Function expression = 0; if(t<30000,-rho*g*d*exp(-(x-x0)^2/(2*l*l)),0)
+    # Most of the island is under water, so we use the difference between the basalt and water densities
+    set Function constants  = d=8000,l=2.5e4,rho=2300,g=10, x0=4e5
+    set Function expression = 0; -rho*g*d*exp(-(x-x0)^2/(2*l*l))
   end
 end
 
@@ -79,13 +79,13 @@ subsection Compositional fields
   set Names of fields  = ve_stress_xx, ve_stress_yy, ve_stress_xy, lithosphere
 end
 
-# We set the elastic thickness of the lithosphere to 80 km
+# We set the elastic thickness of the lithosphere to 34 km
 subsection Initial composition model
   set Model name = function
   subsection Function
     set Variable names      = x,y
-    set Function constants  = 
-    set Function expression = 0; 0; 0; 0.5+0.5*tanh((y-320000)/10000)
+    set Function constants  = y0=400000, lithosphere_thickness=34000
+    set Function expression = 0; 0; 0; 0.5+0.5*tanh((y-y0+lithosphere_thickness)/10000)
   end
 end
 
@@ -121,11 +121,10 @@ subsection Material model
 
   subsection Viscoelastic
     set Densities            = 3300
-    set Viscosities          = 5.e19, 1.e24, 1.e24, 1.e24, 1.e24
+    set Viscosities          = 2.e19, 1.e26, 1.e26, 1.e26, 1.e26
     set Elastic shear moduli = 1.e12, 1.e12, 1.e12, 1.e12, 70.e9
     set Fixed elastic time step     = 1e3
     set Use fixed elastic time step = false
- #   set Use stress averaging        = false 
     set Viscosity averaging scheme  = maximum composition
     set Thermal expansivities = 0
   end
@@ -142,13 +141,13 @@ end
 subsection Postprocess
   set List of postprocessors = velocity statistics, basic statistics, temperature statistics, visualization, topography
   subsection Visualization
-    set List of output variables = material properties, strain rate, nonadiabatic pressure, surface elevation
+    set List of output variables = material properties, strain rate, nonadiabatic pressure
 
     subsection Material properties
       set List of material properties = density, viscosity
     end
 
-    set Time steps between graphical output = 10
+    set Time steps between graphical output = 20
     set Interpolate output = true
   end
 
