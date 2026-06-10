@@ -127,7 +127,7 @@ subsection Initial composition model
   set Model name = function
 
   subsection Function
-    set Function constants        = r=100000, amplitude=1
+    set Function constants        = r=100000, amplitude=0.5
     set Function expression       = if((x-1000e3)*(x-1000e3)+y*y<r*r,amplitude,0);0
   end
 end
