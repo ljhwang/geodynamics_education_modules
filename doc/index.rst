@@ -39,7 +39,7 @@ The educational resources will address key topics in geodynamics. Our core focus
     +-----------------------------+-------------------------------------------------------------+
     | Modules                     | Topics                                                      |
     +=============================+=============================================================+
-    | 101 modeling                | - Physical model                                            |
+    | `101 modeling`_             | - Physical model                                            |
     |                             | - Numerical model                                           |
     | (van Zelst  et al. (2022))  | - Code verification                                         |
     |                             | - Model setup                                               |
@@ -48,12 +48,12 @@ The educational resources will address key topics in geodynamics. Our core focus
     |                             | - Communicating modeling results                            |
     |                             | - Software, data, and resource management                   |
     +-----------------------------+-------------------------------------------------------------+
-    | Heat flow                   | - Radiogenic heat/crustal composition                       |
+    | `Heat flow`_                | - Radiogenic heat/crustal composition                       |
     |                             | - Mantle temperature                                        |
     |                             | - Surface heat flow in the oceans (half-space cooling,      |
     |                             |   plate model)                                              |
     +-----------------------------+-------------------------------------------------------------+
-    | Mantle dynamics             | - Global mantle flow                                        |
+    | `Mantle dynamics`_          | - Global mantle flow                                        |
     |                             | - Plate driving forces                                      |
     |                             | - Earth chemical evolution                                  |
     |                             | - Non-dimensional numbers, e.g., Rayleigh number, Nusselt   |
@@ -65,29 +65,29 @@ The educational resources will address key topics in geodynamics. Our core focus
     | `Elasticity & flexure`_     | - Loading-Induced Deformation                               |
     |                             | - Elastic Rebound Theory                                    |
     +-----------------------------+-------------------------------------------------------------+
-    | Stress & strain             | - An introduction to tensors                                |
+    | `Stress & strain`_          | - An introduction to tensors                                |
     |                             | - Measuring stress and strain                               |
     |                             | - Simple stress-strain relationships                        |
     |                             | - Time scales and links to earthquake seismology            |
     +-----------------------------+-------------------------------------------------------------+
-    | Rheology                    | - Viscous Flow                                              |
+    | `Rheology`_                 | - Viscous Flow                                              |
     |                             | - Brittle Failure                                           |
     |                             | - Elasticity                                                |
     |                             | - Composite rheologies                                      |
     +-----------------------------+-------------------------------------------------------------+
-    | Phase transition            | - Clapeyron slopes / exothermic vs. endothermic Melt        |
+    | `Phase transition`_         | - Clapeyron slopes / exothermic vs. endothermic Melt        |
     +-----------------------------+-------------------------------------------------------------+
-    | Melt                        | - Generation & partitioning                                 |
+    | `Melt`_                     | - Generation & partitioning                                 |
     |                             | - Extrusive vs intrusive                                    |
     |                             | - Outgassing of volatiles and coupling with atmospheric     |
     |                             |   studies                                                   |
     +-----------------------------+-------------------------------------------------------------+
-    | Extension, rifting, &       | - Continental rifts                                         |
-    | drifting                    | - Mid-oceanic ridges                                        |
+    | `Rifting`_                  | - Continental rifts                                         |
+    |                             | - Mid-oceanic ridges                                        |
     |                             | - Initial heterogeneities (what are they? initial &         |
     |                             |   boundary conditions and their effects)                    |
     +-----------------------------+-------------------------------------------------------------+
-    | Subduction                  | - Upper plate deformation (mountains vs. back-arcs)         |
+    | `Subduction`_               | - Upper plate deformation (mountains vs. back-arcs)         |
     |                             | - Subduction zone forces (e.g., slab pull, ridge push)      | 
     |                             | - Thermal structure and relation to other topics            |
     |                             |   (earthquake locations, tomography etc)                    |
@@ -157,4 +157,13 @@ The Education Working Group (EWG) works to promote access to educational materia
 
 - Iris van Zelst (German Aerospace Center, DLR)
 
-.. _Elasticity & flexure: https://mybinder.org/v2/gh/JarettBakerDunn/geodynamics_education_modules_jbd/HEAD?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Felasticity-flexture-L0%2F4_plotting_the_model_simulation_results.ipynb
+.. _101 modeling: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Fgeodynamic-modeling-L0%2F0_main_geodynamic_modeling_L0.ipynb
+.. _Elasticity & flexure: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Felasticity-flexture-L0%2F0_overview-elasticity-flexure.ipynb
+.. _Heat flow: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Fheat-flow-module-L0%2F0_overview-heat-flow-module.ipynb
+.. _Mantle dynamics: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Fmantle-dynamics-L0%2F0_overview_mantle_dynamics_L0.ipynb
+.. _Stress & strain: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Fstress-strain-module-L0%2F0_overview_stress_strain_L0.ipynb
+.. _Rheology: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Frheology-L0%2F0_overview-rheology.ipynb
+.. _Phase transition: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Fphase-transitions-L0%2F0_overview_phase_transitions.ipynb
+.. _Melt: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Fmelt-L0%2F0_overview_melt.ipynb
+.. _Rifting: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Frifting-L0%2F0_overview_rifting.ipynb
+.. _Subduction: https://mybinder.org/v2/gh/geodynamics/geodynamics_education_modules/main?urlpath=%2Fdoc%2Ftree%2Fsource%2Fgeodynamics%2Fsubduction-L0%2F0_overview_subduction.ipynb
