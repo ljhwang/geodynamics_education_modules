@@ -1,0 +1,17 @@
+version: 2
+
+build:
+  os: "ubuntu-22.04"
+  tools:
+    python: "mambaforge-4.10"
+
+# change the following to true once testing is done
+sphinx:
+  configuration: ./doc/conf.py
+  fail_on_warning: false
+
+formats:
+  - pdf
+
+conda:
+  environment: ./doc/environment.yml

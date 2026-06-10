@@ -1,0 +1,16 @@
+name: gem-notebooks
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - jupyter
+  - myst-nb
+  - notebook
+  - sphinx
+  - sphinx-book-theme
+  - ipykernel
+  - nbconvert
+  - pandoc
+  - pip
+  - pip:
+      - nbsphinx
