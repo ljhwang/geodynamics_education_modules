@@ -159,5 +159,5 @@ end
 
 subsection Mesh refinement
   set Initial global refinement = 1
-  set Initial adaptive refinement = 1
+  set Initial adaptive refinement = 0
 end
