@@ -17,7 +17,7 @@
 ####  Global parameters
 set Dimension                              = 2
 set Start time                             = 0
-set End time                               = 5e5
+set End time                               = 2e5
 set Use years in output instead of seconds = true
 set Nonlinear solver scheme                = iterated Advection and Stokes
 set Nonlinear solver tolerance             = 1e-5
