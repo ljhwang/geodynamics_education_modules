@@ -21,8 +21,8 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
     
-RUN pip install pyvista imageio numpy pandas matplotlib scipy meshio tables cartopy;
-    
+RUN pip install pyvista[jupyter] imageio numpy pandas matplotlib scipy meshio tables cartopy;
+
 # Make sure the contents of our repo are in ${HOME}
 COPY . ${HOME}
 USER root
