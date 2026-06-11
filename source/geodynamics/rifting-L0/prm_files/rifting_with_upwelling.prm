@@ -1,4 +1,4 @@
-include rifting.prm
+include prm_files/rifting.prm
 
 set Max nonlinear iterations               = 10
 set CFL number                             = 0.5
