@@ -13,7 +13,7 @@ This initiative is led by the [Computational Infrastructure for Geodynamics](htt
 ## Contributing
 GEM notebooks are a community initiative. We welcome all contributions in supporting education in geodynamics. Please feel free to correct things as small as typos or make larger contributions such as added examples and additional modules.
 
-We have collected a set of guidelines and advice on how to contribute and keep them in the CONTRIBUTING.md INSERT LINK HERE file in this repository.
+We have collected a set of guidelines and advice on how to contribute and keep them in the [CONTRIBUTING.md](https://github.com/geodynamics/geodynamics_education_modules/blob/main/CONTRIBUTING.md) file in this repository.
 
 Have an idea for a new module? Open an issue!
 
