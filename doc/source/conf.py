@@ -38,7 +38,7 @@ html_theme_options = {
     },
     "home_page_in_toc": True,
     "primary_sidebar_end": "navbar_end.html",
-    "repository_url": "https://github.com/geodynamics/geodynamics_education_modules.git",
+    "repository_url": "https://github.com/geodynamics/geodynamics_education_modules",
     "repository_branch": "main",
     "path_to_docs":"doc/source/",
     "use_repository_button": True,

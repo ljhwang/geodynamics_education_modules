@@ -6,7 +6,7 @@
 # Geodynamics Education Modules
 The aim of this initiative is to develop modular teaching resources for upper division and graduate level geodynamic courses. By integrating computing methods and tools in a Jupyter Notebook environment to teach geodynamical concepts, these resources enable and promote the training of a computationally skilled workforce and increase awareness and recruitment of students to the Earth Sciences disciplines and specifically computational geodynamics.
 
-For more information about the philosophy and content of these notebooks, please refer to the documentation INSERT LINK HERE.
+For more information about the philosophy and content of these notebooks, please refer to the [GEM Guide](https://cig-gems.readthedocs.io/en/latest/).
 
 This initiative is led by the [Computational Infrastructure for Geodynamics](https://geodynamics.org/) and is overseen by an Education Working Group ([EWG](https://geodynamics.org/groups/education)).
 
