@@ -6,14 +6,14 @@
 # Geodynamics Education Modules
 The aim of this initiative is to develop modular teaching resources for upper division and graduate level geodynamic courses. By integrating computing methods and tools in a Jupyter Notebook environment to teach geodynamical concepts, these resources enable and promote the training of a computationally skilled workforce and increase awareness and recruitment of students to the Earth Sciences disciplines and specifically computational geodynamics.
 
-For more information about the philsophy and content of these notebooks, please refer to the documentation INSERT LINK HERE.
+For more information about the philosophy and content of these notebooks, please refer to the documentation INSERT LINK HERE.
 
 This initiative is led by the [Computational Infrastructure for Geodynamics](https://geodynamics.org/) and is overseen by an Education Working Group ([EWG](https://geodynamics.org/groups/education)).
 
 ## Contributing
-GEM notebooks are a community initiative. We welcome all contributions in supporting education in geodynamics. Please feel free to correct things as small as typos or make larger contributions such as added examples and addtional modules.
+GEM notebooks are a community initiative. We welcome all contributions in supporting education in geodynamics. Please feel free to correct things as small as typos or make larger contributions such as added examples and additional modules.
 
-We have collected a set of guidelines and advice on how to contribute and keep them in the CONTRIBUTING.md INSErT LINK HERE file in this repository.
+We have collected a set of guidelines and advice on how to contribute and keep them in the CONTRIBUTING.md INSERT LINK HERE file in this repository.
 
 Have an idea for a new module? Open an issue!
 
@@ -42,7 +42,7 @@ Iris van Zelst, University of Edinburgh ([0000-0003-4698-9910](https://orcid.org
 <HR>
 <br>
 
->> Note: Currently the .prm files in these education modules have only been tested to work with ASPECT version 3.1.0-pre, which is the last major ASPECT release and the version of ASPECT available in the ASPECT docker container. The .prm files used in these education modules might not work with the latest main branch commit of ASPECT.
+>> Note: Currently, the .prm files in these education modules have only been tested to work with ASPECT version 3.1.0-pre, which is the last major ASPECT release and the version of ASPECT available in the ASPECT Docker container. The .prm files used in these education modules might not work with the latest main branch commit of ASPECT.
 <HR>
 <br>
 
