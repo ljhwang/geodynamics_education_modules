@@ -1,6 +1,6 @@
 # Phase Transitions
 
-## Description<
+## Description
 
 An introduction to mineral phase transitions, seismological observations of phase changes, and their dynamic implications on plumes and slabs.
 
