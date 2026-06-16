@@ -7,7 +7,7 @@ build:
 
 # change the following to true once testing is done
 sphinx:
-  configuration: ./doc/conf.py
+  configuration: ./doc/source/conf.py
   fail_on_warning: false
 
 formats:
