@@ -5,7 +5,7 @@ community. That includes you! Our goal is to build an inclusive
 and participatory community. We are happy that you are interested in
 participating.
 
-## Asking and answering questions about AxiSEM3D
+## Asking and answering questions about the GEMs
 
 For questions about the GEMs, please use the
 [Education and Outreach](https://community.geodynamics.org/c/eo/36) forum.
@@ -30,7 +30,7 @@ may find. We keep track of all open issues related to the GEMs
 [here](https://github.com/geodynamics/geodynamics_education_modules/issues).
 
 
-## Making AxiSEM3D better
+## Making the GEMs better
 
 The GEMs are a community project. We encourage contributions of all kinds. 
 Much appreciated contributions include new examples,
@@ -93,7 +93,7 @@ not sure what to do.
 We use [PEP8](https://peps.python.org/pep-0008/) standard Python coding conventions to keep the coding style consistent.
 
 ### Changelog entries
-If your new pull request creates a change that is noticeable to AxiSEM3D users,
+If your new pull request creates a change that is noticeable to GEM users,
 please add an entry to our
 [changelog](https://github.com/geodynamics/geodynamics_education_modules/blob/main/CHANGELOG.md). 
 Start your newline with an action verb such as added, implemented, changed, fixed, removed, etc., explain the nature of your change,
