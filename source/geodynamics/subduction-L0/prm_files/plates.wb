@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "coordinate system":{"model":"cartesian"},
+  "cross section": [[0, 5e3], [5000e3, 5e3]],
+  "thermal expansion coefficient": 0,
+  "features":
+  [  
+    {
+       "model":"oceanic plate", "name":"Overriding Plate", "max depth":100e3, 
+       "coordinates":[[5000e3, 0], [10000e3, 0], [10e3, 10000e3], [5000e3, 10e3]],
+       "temperature models":
+         [
+           {"model":"half space model",  "max depth":200e3, "spreading velocity":0.125,  
+            "top temperature": 273, 
+            "ridge coordinates":[[[10000e3, 0], [10000e3, 10e3]]]}
+         ]        
+    },
+    {
+       "model":"oceanic plate", "name":"Subducting Plate", "max depth":200e3, 
+       "coordinates":[[0, 0], [5000e3, 0], [5000e3, 10e3], [0, 10e3]],
+       "temperature models":
+         [
+          {"model":"half space model",  "max depth":200e3, "spreading velocity":0.05, 
+          "top temperature": 273, 
+          "ridge coordinates":[[[0, -1e3], [0, 10e3]]]}
+         ],
+       "composition models": [{"model":"uniform", "compositions":[1], "max depth": 15e3}]
+    },
+    {
+        "model":"subducting plate", "name":"Slab", "dip point": [6000e3, 0], "min depth": -1e3,
+        "coordinates":[[5000e3, -10e3], [5000e3, 10e3]],
+        "segments": [{"length": 336e3, "thickness": [120e3], "angle":[0, 77], "top truncation":[-100e3] }],
+        "temperature models": [{"model":"mass conserving", "spreading velocity":0.05, "subducting velocity" : 0.05, 
+                                "ridge coordinates": [[[0, -1e3], [0, 10e3]]], "coupling depth":336e3, 
+                                "min distance slab top":-10e3  }],
+        "composition models": [{"model":"uniform", "compositions":[1], "max distance slab top": 15e3, "min distance slab top": -1e3}]
+    }
+  ]
+}
