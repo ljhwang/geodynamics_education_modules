@@ -50,7 +50,7 @@ subsection Mesh refinement
   set Initial global refinement          = 3
   set Refinement fraction                = 0.70
   set Coarsening fraction                = 0.1
-  set Minimum refinement level           = 4
+  set Minimum refinement level           = 3
   set Strategy                           = composition threshold
 
   subsection Composition threshold
