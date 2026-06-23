@@ -4,10 +4,10 @@ set Dimension                              = 2
 set Start time                             = 0
 set End time                               = 2e7
 set CFL number                             = 1
-set Use years instead of seconds           = true
+set Use years in output instead of seconds = true
 set Output directory                       = subduction
 set Adiabatic surface temperature          = 1573
-set World builder file                     = ./plates.wb
+set World builder file                     = ./prm_files/plates.wb
 set Pressure normalization                 = no
 
 # Each inner iteration is solved up to this linear
