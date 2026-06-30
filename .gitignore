@@ -1,0 +1,10 @@
+*.ipynb_checkpoints
+
+solution*
+particles*
+plume-with-melt*
+plume*
+slab*
+elastic_deformation*
+rifting*
+subduction*
