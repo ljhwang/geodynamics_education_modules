@@ -1,10 +1,4 @@
 
-
-.. figure:: ../../assets/education-gem-notebooks_icon.png
-    :width: 20%
-    :align: center
-
-
 ====================
 Preface
 ====================
