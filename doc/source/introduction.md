@@ -18,18 +18,29 @@ The Table of Contents in the navigation bar shows the high-level summary for eac
 
 ## Accessing Notebooks
 
-This document links directly to limited resources on Binder to run the notebooks. To run ASPECT (and higher resolution runs), we recommenbd the following options:
+This document links directly to limited resources on Binder to run the notebooks. To run ASPECT (and higher resolution runs), we recommend the following options:
 
 Docker:
-    
+
 ```{code-block} bash
-# ADD INSTRUCTIONS HERE
-$ docker pull 
+$ docker pull geodynamics/gem_jupyterhub:amd64
+$ docker run -p 8000:8000 -it --rm geodynamics/gem_jupyterhub:arm64
+$ 
 ```
+NOTE: if you are using a computer with an apple chip, use the tag "arm64" instead of "amd64" in the above commands.
+
+Once you have run the commands above, navigate to `localhost:8000` in a browser.
+Log in using the username `dealii` and the password `a` (Jupyterhub requires that users log in, but since this docker image containing there is no real need for security of any kind, which is why the password is so short).
+Once you have logged in, navigate to geodynamics_education_modules/source to find the education resources.
+
 
 Jetstream:
 
 ADD INSTRUCTIONS ON REQUESTING ACCESS
+
+Hubzero:
+
+ADD INSTRUCTIONS ON USING WITH HUBZERO
 
 ## Contributing
 
