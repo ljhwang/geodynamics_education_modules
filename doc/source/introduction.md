@@ -23,8 +23,8 @@ This document links directly to limited resources on Binder to run the notebooks
 Docker:
 
 ```{code-block} bash
-$ docker pull geodynamics/gem_jupyterhub:amd64
-$ docker run -p 8000:8000 -it --rm geodynamics/gem_jupyterhub:amd64
+$ docker pull geodynamics/geodynamics_education_modules:amd64
+$ docker run -p 8000:8000 -it --rm geodynamics/geodynamics_education_modules:amd64
 $ 
 ```
 NOTE: if you are using a computer with an apple chip, use the tag "arm64" instead of "amd64" in the above commands.
