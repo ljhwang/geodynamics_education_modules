@@ -1,7 +1,7 @@
 # GEM
 
 <div align="center">
-<img src="../../../assets/education-gem-notebooks_icon.png" width="60%">
+<img src="../../assets/education-gem-notebooks_icon.png" width="60%">
 </div>
 
 <br>
