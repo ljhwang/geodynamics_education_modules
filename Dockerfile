@@ -24,7 +24,8 @@ USER dealii
 
 WORKDIR /home/dealii/
 
-RUN git clone https://github.com/geodynamics/geodynamics_education_modules.git;
+RUN git clone --no-checkout --sparse https://github.com/geodynamics/geodynamics_education_modules.git;
+RUN cd geodynamics_education_modules; git sparse-checkout set assets source/geodynamics; git checkout main;
 
 RUN python3 -m cartopy.feature.download physical;
 
